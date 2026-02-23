@@ -82,4 +82,30 @@ background: white;
 
 </body>
 
+  <script>
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+
+// Prevent the form from actually refreshing the page
+
+event.preventDefault();
+
+
+
+// Grab the values
+
+const user = document.getElementById('username').value;
+
+const pass = document.getElementById('password').value;
+
+
+
+// Show the alert
+
+alert("Username: " + user + "\nPassword: " + pass);
+
+});
+
+</script>
+
 </html>
