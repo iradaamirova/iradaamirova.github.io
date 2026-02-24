@@ -3,18 +3,19 @@
     <title>Title</title>
   </head>
   <body>
-    <input id="fidan" type="text" placeholder="write your name">
-     <input id="gamar" type="text" placeholder="write your age">
+    <input id="username" type="text" placeholder="write your name">
+     <input id="password" type="password" placeholder="write your age">
     <button onclick="miraj()" >miraj</button>
   </body>
   <script>
     function miraj(){
-      a = document.getElementById('gamar').value
-      localStorage.setItem('age', a)
-          b=document.getElementById('fidan').value
-      localStorage.setItem('name', b)
-      alert("saved in database")
+      a = document.getElementById('username').value
+      localStorage.setItem('username', a)
+          b=document.getElementById('password').value
+      localStorage.setItem('password', b)
+      window.location.href = "home.html";
     }
     
   </script>
 </html
+
