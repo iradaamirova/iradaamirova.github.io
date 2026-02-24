@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h1 id="name"></h1>
+        <h1 id="age"></h1>
+        <button>Go back</button>
+    </body>
+    <script>
+        document.getElementById("age").innerHtml = "Your age is" +localStorage.getItem('age')
+         document.getElementById("name").innerHtml = "Hi" +localStorage.getItem('name')
+    </script>
+</html>
