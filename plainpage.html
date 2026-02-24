@@ -5,19 +5,16 @@
   <body>
     <input id="fidan" type="text" placeholder="write your name">
      <input id="gamar" type="text" placeholder="write your age">
-    <button onclick="miraj()">miraj</button>
-    <button onclick="raj()">raj</button>
+    <button onclick="miraj()" >miraj</button>
   </body>
   <script>
     function miraj(){
-      a=document.getElementByiD('gamar').value
+      a = document.getElementById('gamar').value
       localStorage.setItem('age', a)
-          b=document.getElementByiD('fidan').value
-      localStorage.setItem('age', b)
+          b=document.getElementById('fidan').value
+      localStorage.setItem('nsme', b)
       alert("saved in database")
     }
-    function raj(){
-      alert("huseyn")
-    }
+    
   </script>
 </html
